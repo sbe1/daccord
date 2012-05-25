@@ -50,10 +50,6 @@ Look and Feel -- Asthetics and Standards
 hTML5 http://www.w3.org/TR/html5/
 responsive web design http://en.wikipedia.org/wiki/Responsive_Web_Design
 
-Misc
-====
-gravatar/identicon (??? seems like something worth supporting that a certain type of user may appreciate)
-
 
 Other Notes
 ============
