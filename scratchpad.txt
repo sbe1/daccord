@@ -1,0 +1,69 @@
+D'Accord Idea Scratch Pad
+==========================
+
+Authentication:
+=================
+Standard local email/password based accounts
+OpenID http://openid.net/ (provider and consumer for user accounts)
+OAuth 2.0 http://oauth.net/ (for API access and app authorization)
+
+Data Exchange
+=================
+FOAF/FOAF-JSON http://www.foaf-project.org/ (for sharing friend information)
+JSON http://www.json.org/ (primary data exchange format)
+
+Communication and Platform Features
+====================================
+A "wall" with status updates, sharing, comments and other feedback methods ("likes" or up/down vote)
+XMPP http://xmpp.org/ (for live text chat)
+Photo/Video/Audio Gallery
+Google+ style "circles"
+Private Messaging system
+User Profiles, Pages and Groups
+The ability to subscribe to a page or user 
+
+
+Unique feature: Public, themeable blogs
+=========================================
+Users can chose to enable a number of blogs (a site admin can chose if there is a limited number per user or no limit).
+The user can set certain posts to go to the blog(s) and keep others private or restricted to logged in users.
+This allows a user to manage multiple blogs and their personal profile from one interface.
+They can make the blog their public (as in the whole internet can see it) face
+while keeping things that they only want to share among friends or limited circles from prying eyes.
+
+Fairly novel feature: Cross-site friends and communication
+=====================================================
+While a user can create more than one D'Accord profile on more than one D'Accord installation, they will not have to so to interact with user on another D'Accord installation.
+One account on a single site can be used automatically (through the magic of the API and OAuth) on different sites.
+This means a user can add accounts from other D'Accord sites to their friends list and friend and chat/comment/like/share with friends and users on other D'Accord sites.
+
+API and Applications
+=====================
+REST API http://en.wikipedia.org/wiki/Representational_state_transfer
+D'Accord installations will communicate with each other via a REST API
+Mobile and desktop applications and third party sites will interact with D'Accord installs via a REST API
+OpenSocial http://docs.opensocial.org/display/OS/Home (application standard)
+"Login with D'Accord" feature that can be used on third party sites for authentication (could use either OAuth or OpenId for this).
+
+Look and Feel -- Asthetics and Standards
+=================
+hTML5 http://www.w3.org/TR/html5/
+responsive web design http://en.wikipedia.org/wiki/Responsive_Web_Design
+
+Misc
+====
+gravatar/identicon (??? seems like something worth supporting that a certain type of user may appreciate)
+
+
+Other Notes
+============
+
+* Emphasis on privacy and data security, with fine grained privacy and sharing controls for the user.
+
+* Databases supported: MySQL and SQLite (MongoDB?) -- more can be added later.
+
+* Develop an API and application standard and produce three official implementations in Java, Python and PHP Zend framework.
+
+* Support for having virtual MySpace and Facebook friends in your friends list. Support for relatively seamless interaction with your Facebook and MySpace friends.
+
+* Support for users to import their Facebook, MySpace or other profile into their D'Accord account
