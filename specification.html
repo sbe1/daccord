@@ -5,7 +5,7 @@
 	<TITLE></TITLE>
 	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Win32)">
 	<META NAME="CREATED" CONTENT="20090416;11320264">
-	<META NAME="CHANGED" CONTENT="20120608;502785">
+	<META NAME="CHANGED" CONTENT="20120929;12250674">
 	<META NAME="Info 1" CONTENT="">
 	<META NAME="Info 2" CONTENT="">
 	<META NAME="Info 3" CONTENT="">
@@ -14,6 +14,8 @@
 	<!--
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		P { margin-bottom: 0.08in; so-language: zxx }
+		TD P { margin-bottom: 0in; so-language: zxx }
+		TH P { margin-bottom: 0in; so-language: zxx }
 	-->
 	</STYLE>
 </HEAD>
@@ -44,11 +46,208 @@ Social Networking Platform Specification</B></P>
 	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Events</B></P>
 	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Pages</B></P>
 	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Groups</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>OpenSocial
+	Apps</B></P>
 </UL>
 <OL START=4>
 	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>REST API</B></P>
-	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>OpenSocial
-	Apps</B></P>
 </OL>
+<UL>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Overview</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>JSON
+	Response Structure</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Inter-Site
+	Communication</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Friend
+	Interaction</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Events,
+	Pages and Groups Interaction</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Messaging
+	API</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Profile
+	Management</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Media and
+	Album Management</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Event
+	Management</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Page
+	Management</B></P>
+	<LI><P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Group
+	Management</B></P>
+</UL>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in; page-break-before: always">
+<B>Introduction</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in; page-break-before: always">
+<B>REST API</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>Introduction</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>JSON Response
+Format and Structure</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>{&quot;success&quot;:boolean,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;error&quot;:boolean,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"> 
+<B>&quot;errorData&quot;:{&quot;code&quot;:123,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">   
+<B>&quot;message&quot;:&quot;simple error message string intended for
+end user&quot;,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">   
+<B>&quot;details&quot;:&quot;optional detailed error string intended
+for developers should go to javascript</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">        <B>console
+and not the browser window&quot;,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">   
+<B>&quot;trace&quot;:&quot;optional stack trace or equivalent error
+diagnostic report, should go to javascript</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">        <B>console
+and not the browser window&quot;},&quot;</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>dataType&quot;:text/html/number/json-object/json-array,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;data&quot;:&quot;text
+or HTML&quot;/{&quot;json&quot;:&quot;object&quot;}/[&quot;json&quot;,&quot;array&quot;],</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;responseSent&quot;:{&quot;timestamp&quot;:1348934441,</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">   
+<B>&quot;formattedDate&quot;:&quot;Saturday, September 9<SUP>th</SUP>,
+2012&quot;}</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;debug&quot;:&quot;optional
+debug message, should go to javascript console and not the browser&quot;}</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>JSON Response
+primary fields:</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<TR VALIGN=TOP>
+		<TH WIDTH=25%>
+			<P LANG="zxx">Property Name</P>
+		</TH>
+		<TH WIDTH=25%>
+			<P LANG="zxx">Required/Optional</P>
+		</TH>
+		<TH WIDTH=25%>
+			<P LANG="zxx">Description</P>
+		</TH>
+		<TH WIDTH=25%>
+			<P LANG="zxx">Data Types</P>
+		</TH>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>success</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Required</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Indicates if the request was sucessfull</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Boolean</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>error</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Required</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Indicates if an error occurred.</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Boolean</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>errorData</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Optional</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Used only if an error has occurred.</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>JSON Object</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>dataType</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Required</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Indicates the type of data stored in the
+			data property. Valid types are:
+			&quot;t<SPAN STYLE="font-weight: normal">ext:,&quot;html&quot;,&quot;number&quot;,&quot;json-object&quot;,&quot;json-array&quot;.
+			Although the type can be any one of these values, the data
+			property can still be set to null.</SPAN></P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>String</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>data</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Required</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>The main content of the response. Usually
+			set to null when an error or other request failure occurs.</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Text, HTML,Number, JSON Object or JSON
+			Array.</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>responseSent</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Required</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>A JSON Object containing the Unix
+			timestamp and formatted date string when the response was sent.</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>JSON Object</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>debug</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>Optional</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>A per-request debugging message.</P>
+		</TD>
+		<TD WIDTH=25%>
+			<P LANG="zxx" ALIGN=LEFT>String</P>
+		</TD>
+	</TR>
+</TABLE>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
 </BODY>
 </HTML>
