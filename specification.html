@@ -3,9 +3,9 @@
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
 	<TITLE></TITLE>
-	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Win32)">
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.4.1  (Win32)">
 	<META NAME="CREATED" CONTENT="20090416;11320264">
-	<META NAME="CHANGED" CONTENT="20120929;12250674">
+	<META NAME="CHANGED" CONTENT="20130623;18290248">
 	<META NAME="Info 1" CONTENT="">
 	<META NAME="Info 2" CONTENT="">
 	<META NAME="Info 3" CONTENT="">
@@ -114,15 +114,16 @@ or HTML&quot;/{&quot;json&quot;:&quot;object&quot;}/[&quot;json&quot;,&quot;arra
 <P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in">   
 <B>&quot;formattedDate&quot;:&quot;Saturday, September 9<SUP>th</SUP>,
 2012&quot;}</B></P>
-<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;debug&quot;:&quot;optional
-debug message, should go to javascript console and not the browser&quot;}</B></P>
+<P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>&quot;debug&quot;:{&quot;message&quot;:&quot;optional
+debug message, should go to javascript console and not the
+browser&quot;,&quot;data&quot;:{&quot;json&quot;:&quot;object&quot;}}}</B></P>
 <P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
 </P>
 <P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><B>JSON Response
 primary fields:</B></P>
 <P LANG="zxx" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
 </P>
-<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=5 CELLSPACING=0>
 	<COL WIDTH=64*>
 	<COL WIDTH=64*>
 	<COL WIDTH=64*>
@@ -149,7 +150,9 @@ primary fields:</B></P>
 			<P LANG="zxx" ALIGN=LEFT>Required</P>
 		</TD>
 		<TD WIDTH=25%>
-			<P LANG="zxx" ALIGN=LEFT>Indicates if the request was sucessfull</P>
+			<P LANG="zxx" ALIGN=LEFT>Indicates if the request was sucessful.
+			Meaning that the application was contacted and the request was
+			processed by the application successfully.</P>
 		</TD>
 		<TD WIDTH=25%>
 			<P LANG="zxx" ALIGN=LEFT>Boolean</P>
@@ -240,10 +243,13 @@ primary fields:</B></P>
 			<P LANG="zxx" ALIGN=LEFT>Optional</P>
 		</TD>
 		<TD WIDTH=25%>
-			<P LANG="zxx" ALIGN=LEFT>A per-request debugging message.</P>
+			<P LANG="zxx" ALIGN=LEFT>Per-request debugging information. Value
+			is a JSONObject that contains two properties, both can be set, but
+			at least one must be set. Debug properties: message: String, data:
+			JSONObject</P>
 		</TD>
 		<TD WIDTH=25%>
-			<P LANG="zxx" ALIGN=LEFT>String</P>
+			<P LANG="zxx" ALIGN=LEFT>JSONObject</P>
 		</TD>
 	</TR>
 </TABLE>
