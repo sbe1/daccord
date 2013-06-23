@@ -20,7 +20,7 @@ Photo/Video/Audio Gallery
 Google+ style "circles"
 Private Messaging system
 User Profiles, Pages and Groups
-The ability to subscribe to a page or user 
+The ability to subscribe to a user 
 
 
 Unique feature: Public, themeable blogs
@@ -33,7 +33,7 @@ while keeping things that they only want to share among friends or limited circl
 
 Fairly novel feature: Cross-site friends and communication
 =====================================================
-While a user can create more than one D'Accord profile on more than one D'Accord installation, they will not have to so to interact with user on another D'Accord installation.
+While a user can create more than one D'Accord profile on more than one D'Accord installation, they will not have to so to interact with a user on another D'Accord installation.
 One account on a single site can be used automatically (through the magic of the API and OAuth) on different sites.
 This means a user can add accounts from other D'Accord sites to their friends list and friend and chat/comment/like/share with friends and users on other D'Accord sites.
 
